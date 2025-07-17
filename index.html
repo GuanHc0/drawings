@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业共享平台 - 设计学习社区</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ONE-DesignX</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#timeline" class="nav-link">学习日历</a>
+                <a href="#students" class="nav-link">学生</a>
+                <a href="#about" class="nav-link">关于</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">设计学习社区</h1>
+                    <p class="hero-subtitle">记录每一天的进步，分享每一次的成长</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">21</span>
+                            <span class="stat-label">学习天数</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">29</span>
+                            <span class="stat-label">参与学生</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">546</span>
+                            <span class="stat-label">作品总数</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card card-1"></div>
+                        <div class="card card-2"></div>
+                        <div class="card card-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 时间线区域 -->
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">学习日历</h2>
+                <p class="section-subtitle">7月14日 - 8月3日，21天的设计之旅</p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-row">
+                        <div class="timeline-item" data-day="1" data-date="7.14">
+                            <div class="timeline-header">
+                                <span class="day-number">第1天</span>
+                                <span class="day-date">7.14</span>
+                                <span class="course-title">平面类型方法详解</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="2" data-date="7.15">
+                            <div class="timeline-header">
+                                <span class="day-number">第2天</span>
+                                <span class="day-date">7.15</span>
+                                <span class="course-title">剖面类型方法详解</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="3" data-date="7.16">
+                            <div class="timeline-header">
+                                <span class="day-number">第3天</span>
+                                <span class="day-date">7.16</span>
+                                <span class="course-title">立面类型方法讲解</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="4" data-date="7.17">
+                            <div class="timeline-header">
+                                <span class="day-number">第4天</span>
+                                <span class="day-date">7.17</span>
+                                <span class="course-title">造型类型方法详解</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="5" data-date="7.18">
+                            <div class="timeline-header">
+                                <span class="day-number">第5天</span>
+                                <span class="day-date">7.18</span>
+                                <span class="course-title">快题制图类型基础</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row">
+                        <div class="timeline-item" data-day="6" data-date="7.19">
+                            <div class="timeline-header">
+                                <span class="day-number">第6天</span>
+                                <span class="day-date">7.19</span>
+                                <span class="course-title">快题方案类型基础</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="7" data-date="7.20">
+                            <div class="timeline-header">
+                                <span class="day-number">第7天</span>
+                                <span class="day-date">7.20</span>
+                                <span class="course-title">类型学方法总论</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="8" data-date="7.21">
+                            <div class="timeline-header">
+                                <span class="day-number">第8天</span>
+                                <span class="day-date">7.21</span>
+                                <span class="course-title">休息</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="9" data-date="7.22">
+                            <div class="timeline-header">
+                                <span class="day-number">第9天</span>
+                                <span class="day-date">7.22</span>
+                                <span class="course-title">外部空间专题</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="10" data-date="7.23">
+                            <div class="timeline-header">
+                                <span class="day-number">第10天</span>
+                                <span class="day-date">7.23</span>
+                                <span class="course-title">内部空间专题</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row">
+                        <div class="timeline-item" data-day="11" data-date="7.24">
+                            <div class="timeline-header">
+                                <span class="day-number">第11天</span>
+                                <span class="day-date">7.24</span>
+                                <span class="course-title">内外处理总结课</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="12" data-date="7.25">
+                            <div class="timeline-header">
+                                <span class="day-number">第12天</span>
+                                <span class="day-date">7.25</span>
+                                <span class="course-title">点状景观专题</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="13" data-date="7.26">
+                            <div class="timeline-header">
+                                <span class="day-number">第13天</span>
+                                <span class="day-date">7.26</span>
+                                <span class="course-title">面状景观专题</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="14" data-date="7.27">
+                            <div class="timeline-header">
+                                <span class="day-number">第14天</span>
+                                <span class="day-date">7.27</span>
+                                <span class="course-title">景观处理总结课</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="15" data-date="7.28">
+                            <div class="timeline-header">
+                                <span class="day-number">第15天</span>
+                                <span class="day-date">7.28</span>
+                                <span class="course-title">异形场地专题</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row">
+                        <div class="timeline-item" data-day="16" data-date="7.29">
+                            <div class="timeline-header">
+                                <span class="day-number">第16天</span>
+                                <span class="day-date">7.29</span>
+                                <span class="course-title">场地高差专题</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="17" data-date="7.30">
+                            <div class="timeline-header">
+                                <span class="day-number">第17天</span>
+                                <span class="day-date">7.30</span>
+                                <span class="course-title">场地处理总结课</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="18" data-date="7.31">
+                            <div class="timeline-header">
+                                <span class="day-number">第18天</span>
+                                <span class="day-date">7.31</span>
+                                <span class="course-title">城市环境专题</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="19" data-date="8.1">
+                            <div class="timeline-header">
+                                <span class="day-number">第19天</span>
+                                <span class="day-date">8.1</span>
+                                <span class="course-title">新旧关系专题</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-day="20" data-date="8.2">
+                            <div class="timeline-header">
+                                <span class="day-number">第20天</span>
+                                <span class="day-date">8.2</span>
+                                <span class="course-title">复合功能专题</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row">
+                        <div class="timeline-item" data-day="21" data-date="8.3">
+                            <div class="timeline-header">
+                                <span class="day-number">第21天</span>
+                                <span class="day-date">8.3</span>
+                                <span class="course-title">课程总结专题</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学生展示区域 -->
+        <section id="students" class="students-section">
+            <div class="container">
+                <h2 class="section-title">学生作品展示</h2>
+                <p class="section-subtitle">29位同学的成长轨迹</p>
+                
+                <div class="students-grid">
+                    <div class="student-card" data-student="C">
+                        <div class="student-avatar">
+                            <span>C</span>
+                        </div>
+                        <h3>曹雪雅</h3>
+                        <a href="pages/student-cxy.html" class="view-works" id="view-caoxueya">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="C">
+                        <div class="student-avatar">
+                            <span>C</span>
+                        </div>
+                        <h3>陈博希</h3>
+                        <a href="pages/student-cbx.html" class="view-works" id="view-chenboxi">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="C">
+                        <div class="student-avatar">
+                            <span>C</span>
+                        </div>
+                        <h3>陈晗祺</h3>
+                        <a href="pages/student-chq.html" class="view-works" id="view-chenhanqi">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="C">
+                        <div class="student-avatar">
+                            <span>C</span>
+                        </div>
+                        <h3>陈景元</h3>
+                        <a href="pages/student-cjy.html" class="view-works" id="view-chenjingyuan">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="G">
+                        <div class="student-avatar">
+                            <span>G</span>
+                        </div>
+                        <h3>顾沧彧</h3>
+                        <a href="pages/student-gcy.html" class="view-works" id="view-gucangyu">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="H">
+                        <div class="student-avatar">
+                            <span>H</span>
+                        </div>
+                        <h3>何雨菲</h3>
+                        <a href="pages/student-hyf.html" class="view-works" id="view-heyufei">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="H">
+                        <div class="student-avatar">
+                            <span>H</span>
+                        </div>
+                        <h3>胡笑菲</h3>
+                        <a href="pages/student-hxf.html" class="view-works" id="view-huxiaofei">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="L">
+                        <div class="student-avatar">
+                            <span>L</span>
+                        </div>
+                        <h3>李嘉</h3>
+                        <a href="pages/student-lj.html" class="view-works" id="view-lijia">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="L">
+                        <div class="student-avatar">
+                            <span>L</span>
+                        </div>
+                        <h3>李彤瑶</h3>
+                        <a href="pages/student-lty.html" class="view-works" id="view-litongyao">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="L">
+                        <div class="student-avatar">
+                            <span>L</span>
+                        </div>
+                        <h3>李若雨</h3>
+                        <a href="pages/student-lry.html" class="view-works" id="view-liruoyu">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="L">
+                        <div class="student-avatar">
+                            <span>L</span>
+                        </div>
+                        <h3>李昕雨</h3>
+                        <a href="pages/student-lxy.html" class="view-works" id="view-lixinyu">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="L">
+                        <div class="student-avatar">
+                            <span>L</span>
+                        </div>
+                        <h3>刘子康</h3>
+                        <a href="pages/student-lzk.html" class="view-works" id="view-liuzikang">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="L">
+                        <div class="student-avatar">
+                            <span>L</span>
+                        </div>
+                        <h3>逯炜</h3>
+                        <a href="pages/student-lw.html" class="view-works" id="view-luwei">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="M">
+                        <div class="student-avatar">
+                            <span>M</span>
+                        </div>
+                        <h3>马林萱</h3>
+                        <a href="pages/student-mlx.html" class="view-works" id="view-malinxuan">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="N">
+                        <div class="student-avatar">
+                            <span>N</span>
+                        </div>
+                        <h3>倪璟浩</h3>
+                        <a href="pages/student-njh.html" class="view-works" id="view-nijinghao">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Q">
+                        <div class="student-avatar">
+                            <span>Q</span>
+                        </div>
+                        <h3>祁溯</h3>
+                        <a href="pages/student-qs.html" class="view-works" id="view-qisu">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Q">
+                        <div class="student-avatar">
+                            <span>Q</span>
+                        </div>
+                        <h3>秦烽</h3>
+                        <a href="pages/student-qf.html" class="view-works" id="view-qinfeng">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="R">
+                        <div class="student-avatar">
+                            <span>R</span>
+                        </div>
+                        <h3>饶语欣</h3>
+                        <a href="pages/student-ryx.html" class="view-works" id="view-raoyuxin">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="S">
+                        <div class="student-avatar">
+                            <span>S</span>
+                        </div>
+                        <h3>沈冠西</h3>
+                        <a href="pages/student-sgx.html" class="view-works" id="view-shenguanxi">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="S">
+                        <div class="student-avatar">
+                            <span>S</span>
+                        </div>
+                        <h3>孙文豪</h3>
+                        <a href="pages/student-swh.html" class="view-works" id="view-sunwenhao">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="S">
+                        <div class="student-avatar">
+                            <span>S</span>
+                        </div>
+                        <h3>苏域</h3>
+                        <a href="pages/student-sy.html" class="view-works" id="view-suyu">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="W">
+                        <div class="student-avatar">
+                            <span>W</span>
+                        </div>
+                        <h3>王能能</h3>
+                        <a href="pages/student-wnn.html" class="view-works" id="view-wangnengneng">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="X">
+                        <div class="student-avatar">
+                            <span>X</span>
+                        </div>
+                        <h3>谢林序</h3>
+                        <a href="pages/student-xlx.html" class="view-works" id="view-xielinxu">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="X">
+                        <div class="student-avatar">
+                            <span>X</span>
+                        </div>
+                        <h3>谢宇阳</h3>
+                        <a href="pages/student-xyy.html" class="view-works" id="view-xieyuyang">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Y">
+                        <div class="student-avatar">
+                            <span>Y</span>
+                        </div>
+                        <h3>杨依航</h3>
+                        <a href="pages/student-yyh.html" class="view-works" id="view-yangyihang">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Y">
+                        <div class="student-avatar">
+                            <span>Y</span>
+                        </div>
+                        <h3>于镓瑄</h3>
+                        <a href="pages/student-yjx.html" class="view-works" id="view-yujiaxuan">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Y">
+                        <div class="student-avatar">
+                            <span>Y</span>
+                        </div>
+                        <h3>庾海欣</h3>
+                        <a href="pages/student-yhx.html" class="view-works" id="view-yuhaixin">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Z">
+                        <div class="student-avatar">
+                            <span>Z</span>
+                        </div>
+                        <h3>张驰城</h3>
+                        <a href="pages/student-zcc.html" class="view-works" id="view-zhangchicheng">查看作品</a>
+                    </div>
+                    <div class="student-card" data-student="Z">
+                        <div class="student-avatar">
+                            <span>Z</span>
+                        </div>
+                        <h3>赵梓皓</h3>
+                        <a href="pages/student-zzh.html" class="view-works" id="view-zhaozhihao">查看作品</a>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于区域 -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">关于这个项目</h2>
+                    <p class="about-text">
+                        这是一个为期21天的设计学习项目，从7月14日开始到8月3日结束。
+                        每位学生每天都会完成一个设计作业，记录自己的学习进度和成长轨迹。
+                        通过这个平台，学生们可以互相学习、交流经验，共同进步。
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>每日打卡</h3>
+                            <p>记录每一天的学习成果</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h3>社区分享</h3>
+                            <p>与同学分享设计心得</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>进度追踪</h3>
+                            <p>可视化学习进度</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ONE-DesignX</h3>
+                    <p>设计学习社区，记录每一次的成长</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#timeline">时间线</a></li>
+                        <li><a href="#students">学生</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>Email: contact@designshare.com</p>
+                    <p>微信: DesignShare2024</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ONE-DesignX. All rights reserved.</p>
+            </div>
+        </div>
+        <script>
+            const caoxueyaBtn = document.getElementById('view-caoxueya');
+            if (caoxueyaBtn) {
+              caoxueyaBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = caoxueyaBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const chenboxiBtn = document.getElementById('view-chenboxi');
+            if (chenboxiBtn) {
+              chenboxiBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = chenboxiBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const chenhanqiBtn = document.getElementById('view-chenhanqi');
+            if (chenhanqiBtn) {
+              chenhanqiBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = chenhanqiBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const chenjingyuanBtn = document.getElementById('view-chenjingyuan');
+            if (chenjingyuanBtn) {
+              chenjingyuanBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = chenjingyuanBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const gucangyuBtn = document.getElementById('view-gucangyu');
+            if (gucangyuBtn) {
+              gucangyuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = gucangyuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const heyufeiBtn = document.getElementById('view-heyufei');
+            if (heyufeiBtn) {
+              heyufeiBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = heyufeiBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const huxiaofeiBtn = document.getElementById('view-huxiaofei');
+            if (huxiaofeiBtn) {
+              huxiaofeiBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = huxiaofeiBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const lijiaBtn = document.getElementById('view-lijia');
+            if (lijiaBtn) {
+              lijiaBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = lijiaBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const litongyaoBtn = document.getElementById('view-litongyao');
+            if (litongyaoBtn) {
+              litongyaoBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = litongyaoBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const liruoyuBtn = document.getElementById('view-liruoyu');
+            if (liruoyuBtn) {
+              liruoyuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = liruoyuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const lixinyuBtn = document.getElementById('view-lixinyu');
+            if (lixinyuBtn) {
+              lixinyuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = lixinyuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const liuzikangBtn = document.getElementById('view-liuzikang');
+            if (liuzikangBtn) {
+              liuzikangBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = liuzikangBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const luweiBtn = document.getElementById('view-luwei');
+            if (luweiBtn) {
+              luweiBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = luweiBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const malinxuanBtn = document.getElementById('view-malinxuan');
+            if (malinxuanBtn) {
+              malinxuanBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = malinxuanBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const nijinghaoBtn = document.getElementById('view-nijinghao');
+            if (nijinghaoBtn) {
+              nijinghaoBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = nijinghaoBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const qisuBtn = document.getElementById('view-qisu');
+            if (qisuBtn) {
+              qisuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = qisuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const qinfengBtn = document.getElementById('view-qinfeng');
+            if (qinfengBtn) {
+              qinfengBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = qinfengBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const raoyuxinBtn = document.getElementById('view-raoyuxin');
+            if (raoyuxinBtn) {
+              raoyuxinBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = raoyuxinBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const shenguanxiBtn = document.getElementById('view-shenguanxi');
+            if (shenguanxiBtn) {
+              shenguanxiBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = shenguanxiBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const sunwenhaoBtn = document.getElementById('view-sunwenhao');
+            if (sunwenhaoBtn) {
+              sunwenhaoBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = sunwenhaoBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const suyuBtn = document.getElementById('view-suyu');
+            if (suyuBtn) {
+              suyuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = suyuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const wangnengnengBtn = document.getElementById('view-wangnengneng');
+            if (wangnengnengBtn) {
+              wangnengnengBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = wangnengnengBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const xielinxuBtn = document.getElementById('view-xielinxu');
+            if (xielinxuBtn) {
+              xielinxuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = xielinxuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const xieyuyangBtn = document.getElementById('view-xieyuyang');
+            if (xieyuyangBtn) {
+              xieyuyangBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = xieyuyangBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const yangyihangBtn = document.getElementById('view-yangyihang');
+            if (yangyihangBtn) {
+              yangyihangBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = yangyihangBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const yujiaxuanBtn = document.getElementById('view-yujiaxuan');
+            if (yujiaxuanBtn) {
+              yujiaxuanBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = yujiaxuanBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const yuhaixinBtn = document.getElementById('view-yuhaixin');
+            if (yuhaixinBtn) {
+              yuhaixinBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = yuhaixinBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const zhangchichengBtn = document.getElementById('view-zhangchicheng');
+            if (zhangchichengBtn) {
+              zhangchichengBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = zhangchichengBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const zhaozhihaoBtn = document.getElementById('view-zhaozhihao');
+            if (zhaozhihaoBtn) {
+              zhaozhihaoBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = zhaozhihaoBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+          
+            </script>
+            
+            </script>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 
