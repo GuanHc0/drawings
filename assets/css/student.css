@@ -152,8 +152,21 @@
     display: block;
 }
 
-
-
+.work-image {
+    width: 100%;
+    max-width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-top: 12px;
+    margin-bottom: 8px;
+    background: #f5f5f5;
+    transition: box-shadow 0.2s;
+}
+.work-image:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+}
 
 
 /* 响应式设计 */
@@ -273,4 +286,85 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+} 
+
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 0.2s;
+}
+.img-modal-content {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.32);
+    background: #fff;
+    object-fit: contain;
+}
+.img-modal-close {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001;
+    transition: color 0.2s;
+}
+.img-modal-close:hover {
+    color: #ffb3b3;
+}
+.img-modal-caption {
+    color: #fff;
+    margin-top: 18px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} 
+
+.img-modal-zoom {
+    position: absolute;
+    top: 32px;
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    background: rgba(30,30,30,0.85);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10001;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-modal-zoom#img-modal-zoom-in {
+    right: 100px;
+}
+.img-modal-zoom#img-modal-zoom-out {
+    right: 52px;
+}
+.img-modal-zoom:hover {
+    background: #fff;
+    color: #222;
 } 
