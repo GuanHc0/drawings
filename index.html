@@ -404,6 +404,13 @@
                         <h3>苏域</h3>
                         <a href="pages/student-sy.html" class="view-works" id="view-suyu">查看作品</a>
                     </div>
+                    <div class="student-card" data-student="S">
+                        <div class="student-avatar">
+                            <span>S</span>
+                        </div>
+                        <h3>宋冰月</h3>
+                        <a href="pages/student-sby.html" class="view-works" id="view-songbingyue">查看作品</a>
+                    </div>
                     <div class="student-card" data-student="W">
                         <div class="student-avatar">
                             <span>W</span>
@@ -770,6 +777,18 @@
                 const pwd = prompt('请输入访问密码：');
                 if (pwd === '1234') {
                   window.location.href = suyuBtn.getAttribute('href');
+                } else if (pwd !== null) {
+                  alert('密码错误！');
+                }
+              });
+            }
+            const songbingyueBtn = document.getElementById('view-songbingyue');
+            if (songbingyueBtn) {
+              songbingyueBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const pwd = prompt('请输入访问密码：');
+                if (pwd === '1234') {
+                  window.location.href = songbingyueBtn.getAttribute('href');
                 } else if (pwd !== null) {
                   alert('密码错误！');
                 }
